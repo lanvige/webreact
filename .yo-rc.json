@@ -1,7 +1,0 @@
-{
-  "generator-react-webpack": {
-    "appName": "reactWebpackRedux1",
-    "style": "scss",
-    "postcss": true
-  }
-}
