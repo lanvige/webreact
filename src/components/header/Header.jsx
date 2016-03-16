@@ -1,5 +1,8 @@
 import React, { PropTypes, Component } from 'react'
 
+import './header.css'
+import LogoImg from './logo.png'
+
 class Header extends Component {
 
   constructor(props, context) {
@@ -12,8 +15,8 @@ class Header extends Component {
   render() {
     return (
       <header className="header">
+        <img src={LogoImg} />
         <h1>{this.props.title}</h1>
-        <h3>{this.state.text}</h3>
       </header>
     )
   }

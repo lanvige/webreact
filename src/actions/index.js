@@ -2,20 +2,23 @@ import shop from '../sources/shop'
 import * as types from '../constants/ActionTypes'
 
 
-function receiveProducts(products) {
+let defaultPro = {
+                    id: "fdsafdsa",
+                    title: "title_value2",
+                    completed: false
+                  }
+
+
+export function getProducts() {
   return {
-    type: types.RECEIVE_PRODUCTS,
-    products: products
+    type: types.GET_PRODUCTS,
+    products: defaultPro
   }
 }
 
-export function getAllProducts() {
+function getProducts2() {
   console.log("=======")
-  return dispatch => {
-    shop.getProducts(products => {
-      dispatch(receiveProducts(products))
-    })
-  }
+  dispatch(getProducts());
 }
 
 function addToCartUnsafe(productId) {

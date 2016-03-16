@@ -18,7 +18,7 @@ class AppComponent extends Component {
         <hr />
 
         // content
-        <ProductsContainer title={title}/>
+        <ProductsContainer />
 
         <hr />
         <Footer />

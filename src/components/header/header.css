@@ -1,5 +1,5 @@
-header {
-  background: $brand-primary;
+.header {
+  background: #666666;
   padding: 10px;
   color: rgba(255, 255, 255, 0.8);
 }
