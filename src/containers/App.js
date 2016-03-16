@@ -3,8 +3,9 @@ require('styles/App.css');
 
 
 import React, { Component } from 'react'
+import Header from '../components/header/Header'
+import Footer from '../components/Footer'
 import ProductsContainer from './ProductsContainer'
-// import Product from '../components/Product'
 
 
 class AppComponent extends Component {
@@ -13,10 +14,16 @@ class AppComponent extends Component {
 
     return (
       <div>
-        <h2>{title}</h2>
+        <Header title={title}/>
         <hr />
-        <ProductsContainer />
+
+        // content
+        <ProductsContainer title={title}/>
+
+        <hr />
+        <Footer />
       </div>
+
     );
   }
 }

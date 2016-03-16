@@ -13,6 +13,7 @@ class Header extends Component {
     return (
       <header className="header">
         <h1>{this.props.title}</h1>
+        <h3>{this.state.text}</h3>
       </header>
     )
   }
@@ -20,7 +21,7 @@ class Header extends Component {
 
 
 Header.propTypes = {
-  text: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired
 }
 
 export default Header

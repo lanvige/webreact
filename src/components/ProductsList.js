@@ -2,17 +2,17 @@ import React, { Component, PropTypes } from 'react'
 
 class ProductsList extends Component {
   render() {
+    const { title } = this.props
+
     return (
       <div>
-        <h3>{this.props.title}</h3>
-        <div>{this.props.children}</div>
+        <h3>{title}</h3>
       </div>
     )
   }
 }
 
 ProductsList.propTypes = {
-  children: PropTypes.node,
   title: PropTypes.string.isRequired
 }
 

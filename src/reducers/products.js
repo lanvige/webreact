@@ -1,25 +1,14 @@
-import { combineReducers } from 'redux'
-import { GET_PRODUCTS } from '../constants/ActionTypes'
 
-export function getProducts(state, action) {
+// import { GET_PRODUCTS } from '../constants/ActionTypes'
+
+export default function products(state, action) {
   switch (action.type) {
-    case GET_PRODUCTS:
-      return Object.assign({}, state, {
-        products: [
-          {
-            "id": 1,
-            "title": "iPad 4 Mini",
-            "price": 500.01,
-            "inventory": 2
-          },
-          {
-            "id": 2,
-            "title": "iPad 4 Mini",
-            "price": 500.01,
-            "inventory": 2
-          }
-        ]
-      })
+    // case GET_PRODUCTS:
+    //  return {
+    //     id: "fdsafdsa",
+    //     title: "title_value",
+    //     completed: false
+    //   }
     default:
       return state
   }

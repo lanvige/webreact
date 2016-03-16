@@ -3,27 +3,24 @@ import 'core-js/fn/object/assign';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
-import getProducts from './reducers/products'
-
-import App from './containers/App';
-
+import configureStore from './configureStore';
+import AppContainer from './containers/App';
 
 
 
-const store = createStore(
-  getProducts
-)
 
-const rootEl = document.getElementById('root')
+const store = configureStore();
+
+
+const rootEl = document.getElementById('app')
 
 
 // Render the main component into the dom
 ReactDOM.render(
-  <Provider store={store.getState()}>
-    <App />
+  <Provider store={store}>
+    <AppContainer />
   </Provider>,
   rootEl
 );
