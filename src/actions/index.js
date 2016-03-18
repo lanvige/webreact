@@ -16,9 +16,20 @@ export function getProducts() {
   }
 }
 
-function getProducts2() {
-  console.log("=======")
-  dispatch(getProducts());
+export function getProducts2() {
+  console.log("=getProducts2======")
+  // return dispatch(getProducts(defaultPro);
+  // 2
+  // return dispatch => {
+  //   dispatch(getProducts(defaultPro))
+  // }
+
+  return (dispatch, getState) => {
+    dispatch({
+      type: types.GET_PRODUCTS,
+      products: defaultPro
+    })
+  }
 }
 
 function addToCartUnsafe(productId) {
