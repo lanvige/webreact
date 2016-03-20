@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import  * as actions from '../actions'
 
@@ -6,13 +6,6 @@ class ProductsContainer extends Component {
 
   componentDidMount() {
   //   this.props.dispatch(actions.getProducts2());
-
-    let defaultPro = {
-                    id: "fdsafdsa",
-                    title: "title_value2",
-                    completed: false
-                  }
-
     this.props.dispatch(actions.getProducts())
   }
 
@@ -23,7 +16,7 @@ class ProductsContainer extends Component {
 
     return (
       <div>
-        <h3>{this.props.products.title}</h3>
+        <h3>{this.props.p.title}</h3>
       </div>
     )
   }
@@ -39,10 +32,10 @@ const mapStateToProps = (state) => {
   console.log('======state======')
   console.log(state)
 
-
+  const p  = state.products
 
   return {
-    products: state.products
+    p
 
   }
 }

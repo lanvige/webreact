@@ -3,8 +3,8 @@ import * as types from '../constants/ActionTypes'
 
 
 let defaultPro = {
-                    id: "fdsafdsa",
-                    title: "title_value2",
+                    id: 'fdsafdsa',
+                    title: 'title_value2',
                     completed: false
                   }
 
@@ -17,7 +17,7 @@ export function getProducts() {
 }
 
 export function getProducts2() {
-  console.log("=getProducts2======")
+  console.log('=getProducts2======')
   // return dispatch(getProducts(defaultPro);
   // 2
   // return dispatch => {

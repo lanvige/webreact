@@ -3,8 +3,8 @@ require('styles/App.css');
 
 
 import React, { Component } from 'react'
-import Header from '../components/header/Header'
-import Footer from '../components/Footer'
+import Header from '../components/header'
+import Footer from '../components/footer'
 import ProductsContainer from './ProductsContainer'
 
 

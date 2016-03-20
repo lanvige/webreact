@@ -2,8 +2,8 @@
 import { GET_PRODUCTS } from '../constants/ActionTypes'
 
 let defaultPro = {
-                    id: "fdsafdsa",
-                    title: "title_value",
+                    id: 'fdsafdsa',
+                    title: 'title_value2',
                     completed: false
                   }
 
